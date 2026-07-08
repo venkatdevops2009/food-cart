@@ -1,0 +1,92 @@
+/* start.css - Food Cart Styling with Checkout */
+
+/* Reset defaults */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+h1 {
+  background: #ff5722;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Menu list */
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+#menu li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#menu button {
+  float: right;
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#menu button:hover {
+  background: #45a049;
+}
+
+/* Cart section */
+h2 {
+  margin: 20px;
+  color: #444;
+}
+
+#cart {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+#cart li {
+  background: #e0f7fa;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Total price */
+#total {
+  margin: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Checkout button */
+#checkout {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+}
+
+#checkout:hover {
+  background: #e68900;
+}
