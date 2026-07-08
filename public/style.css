@@ -1,4 +1,4 @@
-/* app.css — Food Delivery App UI */
+/* app.css — Food Delivery App UI with Image Styling */
 
 /* Global reset */
 * {
@@ -19,9 +19,16 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
-  font-size: 1.8em;
-  font-weight: 600;
-  letter-spacing: 1px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1em;
+  opacity: 0.9;
 }
 
 /* Search bar */
@@ -39,7 +46,7 @@ header {
   font-size: 1em;
 }
 
-/* Food cards */
+/* Food grid */
 .food-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -47,10 +54,11 @@ header {
   padding: 20px;
 }
 
+/* Food card */
 .food-card {
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.2s ease;
 }
@@ -59,12 +67,20 @@ header {
   transform: translateY(-5px);
 }
 
+/* Food images */
 .food-card img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
+  border-bottom: 1px solid #eee;
+  transition: transform 0.3s ease;
 }
 
+.food-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Info section */
 .food-card .info {
   padding: 15px;
 }
@@ -88,12 +104,34 @@ header {
   border: none;
   padding: 12px;
   font-size: 1em;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 12px 12px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .order-btn:hover {
   background: #e63600;
+}
+
+/* Cart section */
+.cart-section {
+  margin: 30px;
+  padding: 20px;
+  background: #fff3e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.cart-section h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+#cart li {
+  background: #ffe0b2;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
 }
 
 /* Footer */
@@ -108,8 +146,8 @@ footer {
 
 /* Responsive tweaks */
 @media (max-width: 600px) {
-  header {
-    font-size: 1.4em;
+  header h1 {
+    font-size: 1.6em;
   }
   .search-bar input {
     width: 90%;
